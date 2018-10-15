@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".encrypt">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/enc_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_action_name" />
+
+    <TextView
+        android:textColor="#273c75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Algorithms:"
+        android:textSize="17dp" />
+
+    <RadioGroup
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="DES" />
+
+        <RadioButton
+            android:id="@+id/radio_tdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Triple DES" />
+
+        <RadioButton
+            android:id="@+id/radio_aes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="AES" />
+    </RadioGroup>
+
+    <TextView
+        android:textColor="#273c75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Modes:"
+        android:textSize="17dp" />
+
+    <RadioGroup
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_cbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="CBC" />
+
+        <RadioButton
+            android:id="@+id/radio_ecb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ECB" />
+
+        <RadioButton
+            android:id="@+id/radio_cfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="CFB" />
+    </RadioGroup>
+
+    <TextView
+        android:textColor="#273c75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="input:"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/edit_input_enc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+    <Button
+        android:id="@+id/btn_enc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#1234"
+        android:text="encrypt it for me!" />
+    <TextView
+        android:textColor="#273c75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="output:"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/edit_output_enc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
+
+    <TextView
+        android:textColor="#273c75"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key is : "
+        android:textSize="17dp"/>
+    <TextView
+        android:layout_margin="8dp"
+        android:id="@+id/key_enc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+</ScrollView>
